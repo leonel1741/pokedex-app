@@ -139,8 +139,8 @@ body {
   height: 70px;
   font-size: 25px;
   position: fixed;
-  left: 80%;
-  top: 87%;
+  left: 70%;
+  top: 85%;
   background-color: var(--background-color-button);
   color: var(--text-primary);
   border-radius: 50%;
@@ -148,7 +148,7 @@ body {
   justify-content: center;
   align-items: center;
   animation: btn-return 1.5s;
-  transform-origin: 50% 50%;
+  /* transform-origin: 50% 50%; */
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
   z-index: 100;
 }
@@ -189,16 +189,16 @@ body {
   flex-direction: column;
   place-items: center;
   align-items: center;
-  gap: 5rem;
+  gap: 20px;
   box-shadow: 0 0 20px 20px rgb(166, 165, 165);
-  padding: 50px 30px;
-  margin: 100px 0;
+  padding: 30px;
+  margin: 50px auto;
 }
 
 .btn-settings-return {
   width: 100%;
   left: 10%;
-  padding: 20px 40px;
+  padding: 20px ;
   top: 0;
   display: flex;
 }
@@ -212,7 +212,7 @@ body {
 }
 
 .settings-container h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--text-secondary);
 }
 
@@ -243,8 +243,7 @@ body {
 .theme-list {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -883,15 +882,15 @@ span {
   }
 
   .settings-container h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .settings-container h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .settings-container span {
-    font-size: 30px;
+    font-size: 25px;
   }
   
   .settings-container select {
