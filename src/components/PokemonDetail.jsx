@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import pokemonLogo from '../assets/pokemon-logo.png'
-import { changeColor } from '../store/slices/colorsType.slice';
 
 const PokemonDetail = () => {
 
@@ -13,7 +12,6 @@ const PokemonDetail = () => {
     const [types, setTypes] = useState([]);
     const [colorTypePrimary, setColorTypePrimary] = useState("");
     const [colorTypes, setColorTypes] = useState([]);
-    const colorTypes2 = [];
 
     const listColors = useSelector(state => state.colorsType)
     const navigate = useNavigate();
@@ -55,22 +53,11 @@ const PokemonDetail = () => {
                 if (listColors[i].name === type.type.name) {
                     colorTypes.push(listColors[i].color);
                     console.log(index);
-                    // colorTypes2.push(listColors[i].color);
-                    // console.log(listColors[i].color);
-                    // setTypes(type.type.color?.push(listColors[i].color))
+
                 }
             }
         })
     }
-    // const getColorType = (name) => {
-    //         for (let i = 0; i < listColors.length; i++) {
-    //             if (listColors[i].name === name) {
-    //                 setColorType(listColors[i].color);
-    //                 break;              
-    //             }
-    //         }
-    //         return colorType;
-    // }
 
     console.log(colorTypes);
 

@@ -39,11 +39,9 @@ const PokemonCard = ({ url }) => {
             style={{ background: `${colorType}`, border: `${colorType} 5px solid ` }}
             onClick={() => navigate(`/pokedex/${pokemon.id}`)}
         >
-            {/* <img src={pokemon.sprites?.other.dream_world.front_default} alt="" /> */}
             <div className='image-card-container' >
                 <img src={pokemon.sprites?.other["official-artwork"].front_default} alt="" />
             </div>
-            {/* <img src={pokemon.sprites?.other.home.front_shiny} alt="" /> */}
             <h2>{pokemon.name}</h2>
             <div className='list-card-type'>
                 {
