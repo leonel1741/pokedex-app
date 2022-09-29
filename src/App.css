@@ -103,6 +103,10 @@ body {
 
 .App button, select{
   cursor: pointer;
+} 
+
+.App input:focus {
+  outline: none;
 }
 
 .pokeball-background {
@@ -360,6 +364,10 @@ body {
   font-size: 20px;
   padding: 15px;
   font-size: 25px;
+}
+
+.input-item input:focus {
+  outline: none;
 }
 
 .input-item button {
