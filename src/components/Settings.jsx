@@ -23,10 +23,7 @@ const Settings = () => {
         setCheckedValue(!checkedValue);
         dispatch(changeInputValue(checkedValue));
     }
-
-    console.log(inputValue);
-
-    
+  
     return (
         <div className='settings-container' >
             <div className='btn-settings-return'>

@@ -53,8 +53,6 @@ const Pokedex = () => {
 
     const totalPages = Math.ceil(pokemonList.length / pokemonPerPage);
 
-    console.log(pokemonPerPage);
-
     const pagesNumbers = [];
 
     for (let i = 1; i <= totalPages; i++) {

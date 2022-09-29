@@ -11,7 +11,7 @@ const PokemonDetail = () => {
     const [type, setType] = useState("");
     const [types, setTypes] = useState([]);
     const [colorTypePrimary, setColorTypePrimary] = useState("");
-    const [colorTypes, setColorTypes] = useState([]);
+    const colorTypes = [];
 
     const listColors = useSelector(state => state.colorsType)
     const navigate = useNavigate();
@@ -19,8 +19,6 @@ const PokemonDetail = () => {
     const backToPokedex = () => {
         navigate(-1)
     }
-
-    const dispatch = useDispatch();
 
     const { id } = useParams();
     const [pokemon, setPokemon] = useState({})
@@ -52,14 +50,12 @@ const PokemonDetail = () => {
             for (let i = 0; i < listColors.length; i++) {
                 if (listColors[i].name === type.type.name) {
                     colorTypes.push(listColors[i].color);
-                    console.log(index);
-
                 }
             }
         })
     }
 
-    console.log(colorTypes);
+    // console.log(colorTypes[0]);
 
     const getTypes = () => {
         return (
