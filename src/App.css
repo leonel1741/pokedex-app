@@ -878,6 +878,10 @@ span {
 
 @media (min-width: 768px) {
 
+  .input-container {
+    height: 100%;
+  }
+
   .settings-container h1 {
     font-size: 5rem;
   }
