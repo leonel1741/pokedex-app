@@ -885,6 +885,10 @@ span {
 
 @media (min-width: 768px) {
 
+  .btn-setting {
+    left: 85%;
+  }
+
   .input-container {
     height: 100%;
   }
